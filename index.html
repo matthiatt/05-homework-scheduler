@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Homework 5 - Work Schedule</title>
+  </head>
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+<span id = "savedMsg"></span>
+        <div class="row"><div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">8 A.M</span>
+  </div>
+  <input id="TXT1" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <div class="btn-group">
+  <button class="btn btn-secondary btn-sm" type="button">
+  </button>
+  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button type="button" id="saveBtn1" class="btn btn-outline-dark" onclick="save('TXT1')">Save</button>
+  </div>
+</div>
+    <div class="container"><div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">9 A.M</span>
+  </div>
+  <input id="TXT2" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn2" class="btn btn-outline-dark"onclick="save('TXT2')">Save</button>
+</div>
+    <div class="row">
+        <div class="container">
+            <div class="row"><div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">10 A.M</span>
+  </div>
+  <input id="TXT3" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn3" class="btn btn-outline-dark"onclick="save('TXT3')">Save</button>
+</div>
+    <div class="container">
+        <div class="row">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">11 A.M</span>
+  </div>
+  <input id="TXT4" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn4" class="btn btn-outline-dark"onclick="save('TXT4')">Save</button>
+</div>
+    <div class="container">
+        <div class="row">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">12 P.M</span>
+  </div>
+  <input id="TXT5" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn5" class="btn btn-outline-dark"onclick="save('TXT5')">Save</button>
+</div>
+    <div class="container">
+        <div class="row">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">1 P.M</span>
+  </div>
+  <input id="TXT6" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn6" class="btn btn-outline-dark"onclick="save('TXT6')">Save</button>
+</div>
+    <div class="container">
+        <div class="row">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">2 P.M</span>
+  </div>
+  <input id="TXT7" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn7" class="btn btn-outline-dark"onclick="save('TXT7')">Save</button>
+</div>
+    <div class="container">
+        <div class="row">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">3 P.M</span>
+  </div>
+  <input id="TXT8" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn8" class="btn btn-outline-dark"onclick="save('TXT8')">Save</button>
+</div>
+    <div class="container">
+        <div class="row">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">4 P.M</span>
+  </div>
+  <input id="TXT9" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn9" class="btn btn-outline-dark"onclick="save('TXT9')">Save</button>
+</div>
+    <div class="container">
+        <div class="row">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">5 P.M</span>
+  </div>
+  <input id="TXT10" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <button type="button" id="saveBtn10" class="btn btn-outline-dark"onclick="save('TXT10')">Save</button>
+  
+</div>
+  </div>
+  </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
